@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaman Sharma</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <div class="main-content">
+        <header class="header">
+            <a href="#" class="logo">Yaman Sharma</a>
+            <nav class="sidebar">
+                <button id="mode-toggle"><i class='bx bx-moon'></i></button>
+                <a href="#mainpage" class="active">Home</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#Projects">Projects</a>
+                <a href="#Certifications">Certifications</a>
+                <a href="#Languages">Languages</a>
+                <a href="contact.html" class="active">Contact</a>
+                <span class="active-nav"></span>
+            </nav>
+        </header>
+
+
+<!-- mainpage Section -->
+        <section class="mainpage" id="mainpage">
+            <div class="mainpage-image"></div> 
+            <div class="mainpage-content">
+                <div class="name">Yaman Sharma</div>
+                <div class="about">Mechanical Engineer</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae magnam mollitia, commodi nemo ipsum maxime expedita, rem cum vitae alias assumenda, soluta magni nostrum ratione eum velit culpa autem error!</p>
+                <div class="btn-box">
+                    <a href="contact.html" id="contact-btn" class="btn">Contact</a>
+                </div>
+            </div>
+        </section>
+
+
+<!--education Section -->
+        <section class="education" id="education">
+            <h2 class="heading">Education</h2>
+            <div class="education-container">
+                <div class="education-item">
+                    <div class="icon"><i class='bx bxs-school'></i></div>
+                    <div>
+                        <h3 class="institution">Institution Name</h3>
+                        <p class="degree">Degree</p>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam possimus sunt quwi dignissimos animi ab a eos molestias optio.</p>
+                        <span class="graduation-date">Graduation Date</span>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="icon"><i class='bx bxs-school'></i></div>
+                    <div>
+                        <h3 class="institution">Institution Name</h3>
+                        <p class="degree">Degree</p>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, libero ex tenetur dolorum dignissimos qui magnam ducimus optio dolores esse aspernatur ipsum nesciunt ratione veritatis temporibus accusantium eligendi.</p>
+                        <span class="graduation-date">Graduation Date</span>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="icon"><i class='bx bxs-school'></i></div>
+                    <div>
+                        <h3 class="institution">Institution Name</h3>
+                        <p class="degree">Degree</p>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, libero ex tenetur dolorum dignissimos qui magnam ducimus optio dolores esse aspernatur ipsum nesciunt ratione veritatis temporibus accusantium eligendi.</p>
+                        <span class="graduation-date">Graduation Date</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+<!-- skills Section -->
+        <section class="skills-section" id="skills">
+            <div class="skills-background">
+                <h2 class="skills-title">My Skills</h2>
+                <div class="skills-list">
+                    <div class="skill-item" data-icon="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" data-color="#E44D26">
+                        <canvas class="skill-canvas" width="200" height="200"></canvas>
+                        <div class="skill-name">HTML</div>
+                    </div>
+                    <div class="skill-item" data-icon="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" data-color="#1572B6">
+                        <canvas class="skill-canvas" width="200" height="200"></canvas>
+                        <div class="skill-name">CSS</div>
+                    </div>
+                    <div class="skill-item" data-icon="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" data-color="#F7DF1E">
+                        <canvas class="skill-canvas" width="200" height="200"></canvas>
+                        <div class="skill-name">JavaScript</div>
+                    </div>
+                    <div class="skill-item" data-icon="https://upload.wikimedia.org/wikipedia/commons/3/3f/Three.js_Logo.svg" data-color="#000000">
+                        <canvas class="skill-canvas" width="200" height="200"></canvas>
+                        <div class="skill-name">Three.js</div>
+                    </div>
+                    <div class="skill-item" data-icon="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" data-color="#61DAFB">
+                        <canvas class="skill-canvas" width="200" height="200"></canvas>
+                        <div class="skill-name">React</div>
+                    </div>
+                    <div class="skill-item" data-icon="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" data-color="#68A063">
+                        <canvas class="skill-canvas" width="200" height="200"></canvas>
+                        <div class="skill-name">Node.js</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+<!-- Projects Section -->
+        <section class="Project" id="Projects">
+            <h2 class="heading">My Projects</h2>
+            <div class="container">
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="project1.jpg" alt="Project 1" class="project-image">
+                                <h3>Project Title 1</h3>
+                            </div>
+                            <div class="card-back">
+                                <p>A brief description of Project 1. It showcases amazing features and functionality.</p>
+                                <a href="#" class="btn">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="project2.jpg" alt="Project 2" class="project-image">
+                                <h3>Project Title 2</h3>
+                            </div>
+                            <div class="card-back">
+                                <p>A brief description of Project 2. It's built with modern technologies and best practices.</p>
+                                <a href="#" class="btn">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="project3.jpg" alt="Project 3" class="project-image">
+                                <h3>Project Title 3</h3>
+                            </div>
+                            <div class="card-back">
+                                <p>A brief description of Project 3. This project demonstrates creativity and problem-solving.</p>
+                                <a href="#" class="btn">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Certification Section -->
+        <section class="Certifications" id="Certifications">
+            <div class="container">
+                <h1>Certifications</h1>
+                <div class="certifications-carousel">
+                  <div class="certificate-card">
+                    <img src="certificate1.jpg" alt="Certificate 1" class="certificate-image">
+                    <div class="certificate-info">
+                      <h3>Certificate Title 1</h3>
+                      <p>Issued by: Organization 1</p>
+                    </div>
+                  </div>
+                  <div class="certificate-card">
+                    <img src="certificate2.jpg" alt="Certificate 2" class="certificate-image">
+                    <div class="certificate-info">
+                      <h3>Certificate Title 2</h3>
+                      <p>Issued by: Organization 2</p>
+                    </div>
+                  </div>
+                  <div class="certificate-card">
+                    <img src="certificate3.jpg" alt="Certificate 3" class="certificate-image">
+                    <div class="certificate-info">
+                      <h3>Certificate Title 3</h3>
+                      <p>Issued by: Organization 3</p>
+                    </div>
+                  </div>
+                  <div class="certificate-card">
+                    <img src="certificate4.jpg" alt="Certificate 4" class="certificate-image">
+                    <div class="certificate-info">
+                      <h3>Certificate Title 4</h3>
+                      <p>Issued by: Organization 4</p>
+                    </div>
+                  </div>
+                  <div class="certificate-card">
+                    <img src="certificate5.jpg" alt="Certificate 5" class="certificate-image">
+                    <div class="certificate-info">
+                      <h3>Certificate Title 5</h3>
+                      <p>Issued by: Organization 5</p>
+                    </div>
+                  </div>
+                  <div class="certificate-card">
+                    <img src="certificate6.jpg" alt="Certificate 6" class="certificate-image">
+                    <div class="certificate-info">
+                      <h3>Certificate Title 6</h3>
+                      <p>Issued by: Organization 6</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+<!-- Languages Section -->
+<section class="Languages" id="Languages">
+    <h2 class="heading">Languages</h2>
+    <div class="languages-container">
+        <div class="language-item">
+            <h3>Nepali</h3>
+            <p>Native</p>
+        </div>
+        <div class="language-item">
+            <h3>Hindi</h3>
+            <p>Fluent</p>
+        </div>
+        <div class="language-item">
+            <h3>German</h3>
+            <p>Intermediate</p>
+        </div>
+        <div class="language-item">
+            <h3>English</h3>
+            <p>Fluent</p>
+        </div>
+        <div class="language-item">
+            <h3>Manipuri</h3>
+            <p>Fluent</p>
+        </div>
+    </div>
+</section>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2023 Yaman Sharma</p>
+    </footer>
+    <script src="index.js"></script>
+    <script>
+        const skillItems = document.querySelectorAll('.skill-item');
+
+        skillItems.forEach((item) => {
+            const canvas = item.querySelector('.skill-canvas');
+            const iconUrl = item.dataset.icon;
+            const color = item.dataset.color;
+            const renderer = new THREE.WebGLRenderer({ canvas, alpha: true });
+            renderer.setSize(canvas.width, canvas.height);
+
+            const scene = new THREE.Scene();
+            const camera = new THREE.PerspectiveCamera(75, canvas.width / canvas.height, 0.1, 1000);
+            camera.position.z = 4;
+
+            const textureLoader = new THREE.TextureLoader();
+            textureLoader.load(iconUrl, (iconTexture) => {
+                const canvasTexture = document.createElement('canvas');
+                const ctx = canvasTexture.getContext('2d');
+                const size = 512;
+                canvasTexture.width = size;
+                canvasTexture.height = size;
+
+                ctx.fillStyle = color;
+                ctx.fillRect(0, 0, size, size);
+
+                const iconSize = size * 0.4;
+                ctx.drawImage(
+                    iconTexture.image,
+                    size * 0.2,
+                    size * 0.2,
+                    iconSize,
+                    iconSize
+                );
+
+                const sphereTexture = new THREE.CanvasTexture(canvasTexture);
+                const geometry = new THREE.SphereGeometry(1.2, 32, 32);
+                const material = new THREE.MeshBasicMaterial({ map: sphereTexture });
+
+                const sphere = new THREE.Mesh(geometry, material);
+                scene.add(sphere);
+
+                let isDragging = false;
+
+                canvas.addEventListener('mousedown', () => {
+                    isDragging = true;
+                });
+
+                canvas.addEventListener('mouseup', () => {
+                    isDragging = false;
+                });
+
+                canvas.addEventListener('mousemove', (event) => {
+                    if (isDragging) {
+                        const deltaMove = {
+                            x: event.movementX || event.mozMovementX || event.webkitMovementX || 0,
+                            y: event.movementY || event.mozMovementY || event.webkitMovementY || 0,
+                        };
+
+                        sphere.rotation.y += deltaMove.x * 0.01;
+                        sphere.rotation.x += deltaMove.y * 0.01;
+                    }
+                });
+
+                function animate() {
+                    requestAnimationFrame(animate);
+                    sphere.rotation.y += 0.005;
+                    sphere.rotation.x += 0.005;
+                    renderer.render(scene, camera);
+                }
+
+                animate();
+            });
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+    const projectLinks = document.querySelectorAll('.btn');
+    projectLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            alert('This project link is currently under development.');
+        });
+    });
+
+    const projectCards = document.querySelectorAll('.project-card');
+    projectCards.forEach((card, index) => {
+        setTimeout(() => {
+            card.classList.add('show');
+            card.style.transition = 'transform 1s ease-out';
+            card.style.transform = 'translateX(0)';
+        }, index * 600); // Increase delay to 600ms
+        card.style.transform = 'translateX(-100%)';
+    });
+});
+
+        // Add transition effect to project items
+        const projectCards = document.querySelectorAll('.project-card');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, index * 200); // Adjust the delay as needed
+                }
+            });
+        }, { threshold: 0.1 });
+
+        projectCards.forEach((card) => {
+            observer.observe(card);
+        });
+    </script>
+
+    <script src="index.js"></script>
+</body>
+</html>

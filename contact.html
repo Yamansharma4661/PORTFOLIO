@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Yaman Sharma</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Yaman Sharma</a>
+        <nav class="sidebar">
+            <button id="mode-toggle"><i class='bx bx-moon'></i></button>
+            <a href="index.html#mainpage">Home</a>
+            <a href="index.html#education">Education</a>
+            <a href="index.html#skills">Skills</a>
+            <a href="index.html#Projects">Projects</a>
+            <a href="index.html#Certifications">Certifications</a>
+            <a href="contact.html" class="active">Contact</a>
+            <span class="active-nav"></span>
+        </nav>
+    </header>
+    <section class="contact" id="contact">
+        <div class="contact-content" style="margin-top: 100px;">
+            <div class="contact-info">
+                <div class="CON22">If you want to <br>connect with me</div>
+                <div class="contact-details">
+                    <p><i class='bx bx-envelope'></i> example@example.com</p>
+                    <p><i class='bx bx-phone'></i> +1234567890</p>
+                </div>
+                <div class="home-sci">
+                    <a href="https://github.com/Yamansharma4661" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="mailto:Yamansharma264@gmail.com" target="_blank"><i class='bx bx-envelope'></i></a>
+                    <a href="http://www.linkedin.com/in/yaman-sharma-78880b258" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contact-form">
+                    <div class="input-box">
+                        <div class="input-field">
+                            <input type="text" id="user_name" name="user_name" placeholder="Name" required>
+                            <span class="focus"></span>
+                        </div>
+                        <div class="input-field">
+                            <input type="email" id="user_email" name="user_email" placeholder="Email" required>
+                            <span class="focus"></span>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <div class="input-field">
+                            <input type="number" id="user_phone" name="user_phone" placeholder="Phone Number" required>
+                            <span class="focus"></span>
+                        </div>
+                    </div>
+                    <div class="textarea-field">
+                        <textarea id="message" name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                        <span class="focus"></span>
+                    </div>
+                    <div class="btn-box btns">
+                        <button type="submit" class="btn">Submit</button>
+                    </div>
+                    <p id="response-message" style="font-size: 2rem; color: #5a0000; margin-top: 1rem; text-align: center;"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" style="position: fixed; bottom: 0; width: 100%;">
+        <p>&copy; 2023 Yaman Sharma</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
