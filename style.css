@@ -16,7 +16,7 @@
     --bg-color: #181818;
     --second-bg-color: #282828;
     --text-color: #e0e0e0;
-    --main-color: #1e90ff;
+    --main-color: #edac08;
     --night-bg-color: #181818;
     --night-second-bg-color: #282828;
     --night-text-color: #e0e0e0;
@@ -126,7 +126,7 @@ section#Certifications.Certifications {
     flex: 1;
     background: url('IMGGG.jpg') no-repeat center center;
     background-size: cover;
-    width: 50%;
+    width: 100%;
     height: 80vh;
     border-radius: 50% / 25%;
     margin-right: 2rem;
@@ -159,10 +159,12 @@ body.night-mode .mainpage-content {
 
 .about {
     position: relative;
-    width: 32.8rem;
-    font-size: 40px;
-    color: transparent;
-    -webkit-text-stroke: .7px var(--main-color);
+    width: 50rem; /* Increased width for better content spacing */
+    font-size: 36px; /* Slightly smaller font for balance */
+    color: var(--main-color); /* Set the text color directly */
+    -webkit-text-stroke: none; /* Removed stroke for cleaner look */
+    text-shadow: 2px 2px 4px rgba(12, 12, 12, 0.3); /* Added shadow for depth */
+    font-weight: bold; /* Makes the text more prominent */
 }
 
 body.night-mode .name,
@@ -259,7 +261,7 @@ body.night-mode .btn-box .btn:hover {
     background: var(--second-bg-color);
     padding-bottom: 6rem;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
 }
 
 .heading {
@@ -396,7 +398,7 @@ body.night-mode .contact-content {
 
 .btn {
     background-color: var(--main-color);
-    color: #fff;
+    color: #0d0d0d;
     padding: 15px 30px;
     border: none;
     border-radius: 5px;
@@ -410,14 +412,12 @@ body.night-mode .contact-content {
 }
 
 .skills {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background: var(--second-bg-color);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 5.6rem; /* Match the size of the .name class */
+    font-weight: bold; /* Optional: make the text bold */
+    text-align: center; /* Optional: center the text */
+    margin: 45px 0; /* Optional: add some margin */
 }
+ 
 
 body.night-mode .skills {
     background: var(--night-second-bg-color);
@@ -452,7 +452,7 @@ body.night-mode .skills {
 
 .skills-title {
   font-size: 3rem;
-  color: black;
+  color: rgb(253, 250, 250);
   font-weight: bold;
   margin-bottom: 2rem;
   text-transform: uppercase;
@@ -496,7 +496,7 @@ body.night-mode .skills {
 
 .Languages {
     padding: 2rem 0; /* Reduce the padding */
-    background: var(--second-bg-color); /* Background for languages section */
+    background: var(--bg-color); /* Background for languages section */
 }
 
 .languages-container {
@@ -533,17 +533,21 @@ body.night-mode .language-item {
 }
 
 .education {
-    background: var(--second-bg-color); /* Background for education section */
-    color: var(--text-color);
-    font-family: 'Noto Sans', sans-serif;
-    padding: 9%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: var(--bg-color); /* Background for education section */
+    color: var(--text-color); /* Text color */
+    font-family: 'Poppins', sans-serif; /* Modern and elegant font */
+    font-size: 1.3rem; /* Slightly smaller font size for balance */
+    line-height: 1.6; /* Improved text spacing */
+    padding: 10%; /* Moderate padding for a spacious design */
+    border-radius: 12px; /* Smooth rounded corners */
     animation: fadeInUp 1s ease-in-out;
     margin-top: 0;
     margin-right: 0;
-    padding-right: 9%;
+    padding-right: 10%; /* Match the adjusted padding */
+    box-shadow: 0 3px 6px rgba(17, 17, 17, 0.15); /* Subtle shadow for depth */
+    TEXT-ALIGN: CENTER;
 }
+
 
 body.night-mode .education {
     background: var(--night-second-bg-color);
@@ -606,7 +610,7 @@ body.night-mode .education {
 .education-item .institution {
     display: flex;
     align-items: center;
-    font-size: 1.8em;
+    font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 10px;
     color: var(--text-color);
@@ -629,7 +633,7 @@ body.night-mode .education-item .institution {
 
 .education-item .degree {
     font-size: 1.5em;
-    color: #555;
+    color: #f2eded;
     margin-bottom: 10px;
     margin: 5px 0;
     font-size: 0.9rem;
@@ -640,7 +644,7 @@ body.night-mode .education-item .degree {
 }
 
 .education-item .description {
-    font-size: 1.2em;
+    font-size: 1.2Rem;
     color: #777;
 }
 
@@ -927,13 +931,14 @@ body.night-mode .footer {
     width: 100%;
     max-width: 200px;
     height: auto;
-    border-radius: 50%;
+    object-fit: cover;
+    border-radius: 0;
 }
 
 .card-front h3 {
     font-size: 1.5rem;
     margin-top: 15px;
-    color: #444;
+    color: #b60c0c;
 }
 
 .card-back {
@@ -981,11 +986,13 @@ body.night-mode .footer {
     padding: 50px 0;
     text-align: center;
     background: var(--bg-color); /* Background for certifications section */
+    margin: 0 auto; /* Center the section */
+    width: 100%; /* Ensure it takes full width of the container */
   }
   
   h1 {
     font-size: 2.5rem;
-    color: #333;
+    color: #fffcfc;
     margin-bottom: 30px;
   }
   
@@ -1014,12 +1021,14 @@ body.night-mode .footer {
   
   /* Individual Certificate Cards */
   .certificate-card {
-    min-width: 300px;
-    max-width: 300px;
+    perspective: 1000px;
+    width: auto;
+    max-width:  300px;
+    height: auto;
     flex: 0 0 auto;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(253, 251, 251, 0.905);
     overflow: hidden;
     scroll-snap-align: start;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
